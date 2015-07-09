@@ -173,4 +173,14 @@ Put `poly.cfg` in your `fs_game`:
 	set poly_3y 200
 	set poly_3z 300
 	
-	
+-----	
+Limitations
+-----
+
+Seems like this function only supports triangles defined by shared vertices (maybe even just 4?). I need a function where I can define myself which vertices make up a triangle.
+
+-----
+Questions
+-----
+
+How do I allocate the space for needed vertices correctly? ATM `ri.Hunk_AllocateTempMemory` works nice, not sure though if thats correct.
